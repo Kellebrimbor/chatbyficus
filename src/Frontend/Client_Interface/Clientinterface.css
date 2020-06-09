@@ -3,7 +3,7 @@ div {
     width: 100%;
     height: 100%;
     display: -webkit-flex;
-    -webkit-flex-flow:row wrap ;
+    -webkit-flex-flow: row wrap;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
@@ -17,9 +17,10 @@ div {
     height: 100%;
     background: red;
 }
-.Chat{
+
+.Chat {
     flex-wrap: wrap;
-    width:25%;
-    height:100%;
+    width: 25%;
+    height: 100%;
     background: aqua;
 }

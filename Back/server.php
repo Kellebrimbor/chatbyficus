@@ -6,7 +6,7 @@ use Workerman\Worker;
 
 $connections = [];
 
-$ws_worker = new Worker("websocket://192.168.0.83:8000");
+$ws_worker = new Worker("websocket://0.0.0.0:8000");
 
 $ws_worker->onMessage = function($connection, $data) use (&$connections) {
     foreach($connections as $user => $connection) {

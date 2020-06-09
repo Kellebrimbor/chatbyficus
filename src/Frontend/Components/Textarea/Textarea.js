@@ -11,7 +11,7 @@ export default class Textarea extends Component {
                       disabled={this.props.disabled}
                       value={this.props.value}
 
-                {...this.props}
+                      {...this.props}
             />
         );
     }
