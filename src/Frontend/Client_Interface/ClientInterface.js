@@ -7,8 +7,8 @@ class ClientInterface extends React.Component {
 
     render() {
         return (
-            <div>
-                <div>
+            <div className={"clientInterface"}>
+
                     <Menu className={"Menu"}/>
                     <Chat setNick={this.props.setNick}
                           nick={this.props.nick}
@@ -16,7 +16,7 @@ class ClientInterface extends React.Component {
                           setSend={this.props.setSend}
                           message={this.props.message}
                           openWS={this.props.openWS} className={"Chat"}/>
-                </div>
+
             </div>
         )
     }

@@ -1,8 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import ClientInterface from "./Client_Interface/ClientInterface";
-import Auth from "./Client_Interface/Auth/Auth";
+import Auth from "./Auth/Auth";
 import {WP} from "./const";
+import Chat from "./Client_Interface/Components/Chat/Chat";
+import Footer from "./Components/Footer/Footer";
 
 class App extends React.Component {
     constructor(props) {
@@ -53,6 +55,9 @@ class App extends React.Component {
                                          sendMessage={this.sendMessage}
                                          setSend={this.setSend}
                                          message={this.state.message}/>
+                    </Route>
+                    <Route exact path={"/test"}>
+                        <Footer/>
                     </Route>
                 </Switch>
             </BrowserRouter>

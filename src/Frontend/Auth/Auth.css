@@ -1,0 +1,15 @@
+.formLogin {
+
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+ .inputLogin {
+    height: 15%;
+    width: 15%;
+
+
+}
