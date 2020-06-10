@@ -4,7 +4,6 @@ import ClientInterface from "./Client_Interface/ClientInterface";
 import Auth from "./Auth/Auth";
 import {WP} from "./const";
 import Chat from "./Client_Interface/Components/Chat/Chat";
-import Footer from "./Components/Footer/Footer";
 
 class App extends React.Component {
     constructor(props) {
@@ -57,7 +56,7 @@ class App extends React.Component {
                                          message={this.state.message}/>
                     </Route>
                     <Route exact path={"/test"}>
-                        <Footer/>
+                        <Chat/>
                     </Route>
                 </Switch>
             </BrowserRouter>
