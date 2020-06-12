@@ -1,8 +1,7 @@
 import React from 'react';
-import Textarea from "../Components/Textarea/Textarea";
 import "./Auth.css";
-import {Link} from "react-router-dom";
 import Header from "./Auth_Components/Header/Header";
+import FormLogin from "./Auth_Components/FormLogin/FormLogin";
 
 class Auth extends React.Component {
 
@@ -11,28 +10,9 @@ class Auth extends React.Component {
             <div className={"Auth"}>
                 <Header/>
                 <div className={"Content_start_page"}>
-                    CONTENT
+                    <p>CONTENT</p>
                 </div>
-                <div className={"formLogin"}>
-                    <div>
-                        <p>Рандомное приветствие для долбоебов, пользующихся этим</p>
-                        <p>Введите логин</p>
-                        <div className={"inputLogin"}>
-                            <Textarea onChange={(e) => {
-                                this.props.setNick(e.target.value);
-                            }}/>
-                        </div>
-                        <div>
-                            <form onSubmit={this.props.openWS}>
-                                <input type={"button"} value={"отправить"} onClick={() => {
-                                    this.props.openWS();
-                                    document.getElementById("Link").click()
-                                }}/>
-                                <Link to={"/chat"} id={"Link"}/>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <FormLogin setNick={this.props.setNick} openWS={this.props.openWS}/>
             </div>
         );
     }

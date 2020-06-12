@@ -1,0 +1,28 @@
+.formLogin {
+    height: 100%;
+    width: 100%;
+    grid-area: formLogin;
+    display: grid;
+    grid-template-areas:
+    "hello"
+    "input"
+    "sendform"
+    "registation";
+    grid-template-columns: auto;
+    background: #ac88bf;
+}
+
+.HelloText {
+    grid-area: hello;
+}
+
+.inputLogin {
+    grid-area: input;
+}
+
+.sendForm {
+    grid-area: sendform;
+}
+.regisration{
+    grid-area:registration;
+}

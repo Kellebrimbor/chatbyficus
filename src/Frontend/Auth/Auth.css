@@ -10,26 +10,10 @@
 }
 
 
-
 .Content_start_page {
     grid-area: content;
-    background: antiquewhite;
+    background: #909cc4;
 }
 
-.formLogin {
-    grid-area: formLogin;
-    background: chocolate;
-
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.inputLogin {
-    height: 15%;
-    width: 15%;
 
 
-}

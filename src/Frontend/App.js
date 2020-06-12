@@ -4,6 +4,7 @@ import ClientInterface from "./Client_Interface/ClientInterface";
 import Auth from "./Auth/Auth";
 import {WP} from "./const";
 import Chat from "./Client_Interface/Components/Chat/Chat";
+import RegistrationPage from "./RegistrationPage/RegistrationPage";
 
 class App extends React.Component {
     constructor(props) {
@@ -55,8 +56,8 @@ class App extends React.Component {
                                          setSend={this.setSend}
                                          message={this.state.message}/>
                     </Route>
-                    <Route exact path={"/test"}>
-                        <Chat/>
+                    <Route  path={"/registration"} exact component={RegistrationPage}>
+                        <RegistrationPage/>
                     </Route>
                 </Switch>
             </BrowserRouter>
