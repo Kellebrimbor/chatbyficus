@@ -47,7 +47,7 @@ class App extends React.Component {
                     <Route exact path={"/"}>
                         <Auth setNick={this.setNick} openWS={this.openWS}/>
                     </Route>
-                    <Route exact path={"/chat"}>
+                    <Route  path={"/chat"} exact component={Chat} >
                         <ClientInterface setNick={this.setNick}
                                          nick={this.state.nick}
                                          openWS={this.openWS}
